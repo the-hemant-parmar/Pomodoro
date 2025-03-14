@@ -1,23 +1,22 @@
+/* General Styles */
 body {
 	font-family: Arial, sans-serif;
-	background: #f4f4f4;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	transition: background 0.5s ease;
 }
 
 .container {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	width: 320px;
 	text-align: center;
+	margin: 40px auto;
 }
 
+/* Timer Display */
 .timer {
 	margin-bottom: 20px;
 }
@@ -32,26 +31,7 @@ body {
 	font-weight: bold;
 }
 
-.controls {
-	margin-top: 20px;
-}
-
-.settings .time-config {
-	margin-bottom: 10px;
-}
-
-.settings label {
-	display: block;
-	margin-bottom: 5px;
-}
-
-.settings input {
-	width: 60px;
-	padding: 5px;
-	margin: 0 5px;
-	box-sizing: border-box;
-}
-
+/* Buttons in one line */
 .buttons {
 	display: flex;
 	justify-content: center;
@@ -73,6 +53,56 @@ body {
 	cursor: not-allowed;
 }
 
-.audio-toggle {
-	margin-top: 10px;
+/* Settings Link */
+.settings-link {
+	margin-top: 15px;
+}
+.settings-link a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+/* Config Form Styles */
+.config-container .time-config,
+.config-container .audio-config {
+	margin-bottom: 15px;
+}
+
+.config-container label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.config-container input[type="number"],
+.config-container input[type="text"] {
+	width: calc(100% - 12px);
+	padding: 5px;
+	margin: 2px 0;
+	box-sizing: border-box;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-buttons button,
+.form-buttons a {
+	padding: 10px 15px;
+	border: none;
+	background: #007bff;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Backgrounds Based on Mode */
+body.work-mode {
+	background: #8d99ae; /* Active/bright background */
+}
+
+body.break-mode {
+	background: #cdb4db; /* Cozy/soft background */
 }
