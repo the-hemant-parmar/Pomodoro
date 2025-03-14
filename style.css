@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 320px;
+	text-align: center;
+}
+
+.timer {
+	margin-bottom: 20px;
+}
+
+#mode-label {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+#time-display {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.controls {
+	margin-top: 20px;
+}
+
+.settings .time-config {
+	margin-bottom: 10px;
+}
+
+.settings label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.settings input {
+	width: 60px;
+	padding: 5px;
+	margin: 0 5px;
+	box-sizing: border-box;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.buttons button {
+	padding: 10px 15px;
+	border: none;
+	background: #007bff;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.buttons button:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.audio-toggle {
+	margin-top: 10px;
+}
